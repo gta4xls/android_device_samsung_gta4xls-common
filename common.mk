@@ -154,7 +154,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sec_e-pen.idc
 
-# Keymaster
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.sharedsecret-V1-ndk.vendor:64 \
+    libcppbor_external.vendor:64
+
 PRODUCT_PACKAGES += \
     libcrypto-tm \
     libshim_crypto:64 \
